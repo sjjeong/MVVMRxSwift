@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		EECAB541261DE98100D3AC7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECAB53F261DE98100D3AC7E /* LaunchScreen.storyboard */; };
 		EECAB54C261DE98200D3AC7E /* MVVMRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAB54B261DE98200D3AC7E /* MVVMRxSwiftTests.swift */; };
 		EECAB557261DE98200D3AC7E /* MVVMRxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAB556261DE98200D3AC7E /* MVVMRxSwiftUITests.swift */; };
+		EECAB574261DEF9500D3AC7E /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = EECAB573261DEF9500D3AC7E /* restaurants.json */; };
+		EECAB579261DF01800D3AC7E /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAB578261DF01800D3AC7E /* Restaurant.swift */; };
+		EECAB57E261DF09A00D3AC7E /* RestaurantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAB57D261DF09A00D3AC7E /* RestaurantService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		EECAB552261DE98200D3AC7E /* MVVMRxSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMRxSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECAB556261DE98200D3AC7E /* MVVMRxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMRxSwiftUITests.swift; sourceTree = "<group>"; };
 		EECAB558261DE98200D3AC7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EECAB573261DEF9500D3AC7E /* restaurants.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
+		EECAB578261DF01800D3AC7E /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		EECAB57D261DF09A00D3AC7E /* RestaurantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantService.swift; sourceTree = "<group>"; };
 		F4D5132AC388EE4BED94525C /* Pods-MVVMRxSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftTests/Pods-MVVMRxSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6CAB0ABD3C63BD086E22A5A /* Pods_MVVMRxSwift_MVVMRxSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMRxSwift_MVVMRxSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,7 +117,6 @@
 				F4D5132AC388EE4BED94525C /* Pods-MVVMRxSwiftTests.debug.xcconfig */,
 				839D9DCA8D617243D45E2407 /* Pods-MVVMRxSwiftTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -147,6 +152,9 @@
 				EECAB53D261DE98100D3AC7E /* Assets.xcassets */,
 				EECAB53F261DE98100D3AC7E /* LaunchScreen.storyboard */,
 				EECAB542261DE98100D3AC7E /* Info.plist */,
+				EECAB573261DEF9500D3AC7E /* restaurants.json */,
+				EECAB578261DF01800D3AC7E /* Restaurant.swift */,
+				EECAB57D261DF09A00D3AC7E /* RestaurantService.swift */,
 			);
 			path = MVVMRxSwift;
 			sourceTree = "<group>";
@@ -277,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EECAB574261DEF9500D3AC7E /* restaurants.json in Resources */,
 				EECAB541261DE98100D3AC7E /* LaunchScreen.storyboard in Resources */,
 				EECAB53E261DE98100D3AC7E /* Assets.xcassets in Resources */,
 				EECAB53C261DE98000D3AC7E /* Main.storyboard in Resources */,
@@ -407,8 +416,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EECAB579261DF01800D3AC7E /* Restaurant.swift in Sources */,
 				EECAB539261DE98000D3AC7E /* ViewController.swift in Sources */,
 				EECAB535261DE98000D3AC7E /* AppDelegate.swift in Sources */,
+				EECAB57E261DF09A00D3AC7E /* RestaurantService.swift in Sources */,
 				EECAB537261DE98000D3AC7E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
