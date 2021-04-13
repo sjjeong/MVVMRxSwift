@@ -27,9 +27,8 @@ class RestaurantListViewController: BaseMvvmViewController<RestaurantListViewMod
         
         viewModel.restaurantList
             .asDriver()
-            .drive(restaurantTableView.rx.items(cellIdentifier: "cell")) {
-                index, viewModel, cell in
-                cell.textLabel?.text = viewModel.displayText
+            .drive(restaurantTableView.rx.items(cellIdentifier: "cell")) { index, item, cell in
+                cell.textLabel?.text = item.displayText
             }
             .disposed(by: disposeBag)
     }
