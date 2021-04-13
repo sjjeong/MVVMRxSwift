@@ -11,7 +11,7 @@ import RxSwift
 class BaseMvvmViewController<VM: BaseViewModel>: UIViewController {
     let disposeBag: DisposeBag = DisposeBag()
     var viewModel: VM!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.start()

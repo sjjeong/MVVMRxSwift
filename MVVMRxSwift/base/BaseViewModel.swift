@@ -10,7 +10,7 @@ import RxSwift
 
 class BaseViewModel {
     let disposeBag: DisposeBag = DisposeBag()
-    
+
     func start() {
         // no-op
     }

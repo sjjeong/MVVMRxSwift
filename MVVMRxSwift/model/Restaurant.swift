@@ -10,7 +10,7 @@ import Foundation
 struct Restaurant: Decodable {
     let name: String
     let cuisine: Cuisine
-    
+
     var displayText: String {
         return self.name + " - " + self.cuisine.rawValue.capitalized
     }
