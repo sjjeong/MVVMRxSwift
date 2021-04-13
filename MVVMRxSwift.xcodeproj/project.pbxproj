@@ -22,6 +22,7 @@
 		EECAB541261DE98100D3AC7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECAB53F261DE98100D3AC7E /* LaunchScreen.storyboard */; };
 		EECAB54C261DE98200D3AC7E /* MVVMRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAB54B261DE98200D3AC7E /* MVVMRxSwiftTests.swift */; };
 		EECAB557261DE98200D3AC7E /* MVVMRxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAB556261DE98200D3AC7E /* MVVMRxSwiftUITests.swift */; };
+		EEE35FD22625920300FFA0AC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE35FD12625920300FFA0AC /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		EECAB552261DE98200D3AC7E /* MVVMRxSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMRxSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECAB556261DE98200D3AC7E /* MVVMRxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMRxSwiftUITests.swift; sourceTree = "<group>"; };
 		EECAB558261DE98200D3AC7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE35FD12625920300FFA0AC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F4D5132AC388EE4BED94525C /* Pods-MVVMRxSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftTests/Pods-MVVMRxSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6CAB0ABD3C63BD086E22A5A /* Pods_MVVMRxSwift_MVVMRxSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMRxSwift_MVVMRxSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -189,6 +191,7 @@
 				9AA5220043C2C5C1FA7E060F /* assets */,
 				9AA52EF4DA4D04315EAE2B0E /* data */,
 				9AA52FBD070C3E981937B854 /* stroyboard */,
+				EEE35FD12625920300FFA0AC /* AppCoordinator.swift */,
 			);
 			path = MVVMRxSwift;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				9AA5217BCA3883EFAB6DB894 /* RestaurantService.swift in Sources */,
 				9AA52300AC58177E0D2381AA /* RestaurantViewController.swift in Sources */,
 				9AA52E9F25ABE6C4FB410EDB /* RestaurantViewModel.swift in Sources */,
+				EEE35FD22625920300FFA0AC /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
