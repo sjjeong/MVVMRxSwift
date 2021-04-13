@@ -15,18 +15,23 @@ class RestaurantListViewController: BaseMvvmViewController<RestaurantListViewMod
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = viewModel.title
         navigationController?.navigationBar.prefersLargeTitles = true
         
         restaurantTableView.tableFooterView = UIView()
         restaurantTableView.contentInsetAdjustmentBehavior = .never
         
-        viewModel.fetchRestaurantViewModels()
-            .observe(on: MainScheduler.instance)
-            .bind(to: restaurantTableView.rx.items(cellIdentifier: "cell")) {
+        viewModel.title
+            .asDriver()
+            .drive(navigationItem.rx.title)
+            .disposed(by: disposeBag)
+        
+        viewModel.restaurantList
+            .asDriver()
+            .drive(restaurantTableView.rx.items(cellIdentifier: "cell")) {
                 index, viewModel, cell in
                 cell.textLabel?.text = viewModel.displayText
-            }.disposed(by: disposeBag)
+            }
+            .disposed(by: disposeBag)
     }
 
 

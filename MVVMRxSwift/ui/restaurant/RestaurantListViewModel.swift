@@ -7,18 +7,22 @@
 
 import Foundation
 import RxSwift
+import RxRelay
 
 final class RestaurantListViewModel: BaseViewModel {
-    let title = "Restaurants"
-    
     private let restaurantService: RestaurantServiceProtocol
+    
+    let title: BehaviorRelay<String> = .init(value: "Restaurants")
+    let restaurantList: BehaviorRelay<[Restaurant]> = .init(value: [])
     
     init(restaurantService: RestaurantServiceProtocol) {
         self.restaurantService = restaurantService
     }
     
-    func fetchRestaurantViewModels() -> Observable<[Restaurant]> {
-        return restaurantService.fetchRestaurants()
+    override func start() {
+        restaurantService.fetchRestaurants()
+            .bind(to: restaurantList)
+            .disposed(by: disposeBag)
     }
     
 }
