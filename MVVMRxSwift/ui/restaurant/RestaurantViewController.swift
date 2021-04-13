@@ -12,16 +12,9 @@ import RxCocoa
 class RestaurantViewController: UIViewController {
     
     private let disposeBag: DisposeBag = .init()
-    private var viewModel: RestaurantListViewModel!
+    var viewModel: RestaurantListViewModel!
     @IBOutlet weak var restaurantTableView: UITableView!
-    
-    static func instantiate(viewModel: RestaurantListViewModel) -> RestaurantViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: .main)
-        let viewController = storyboard.instantiateInitialViewController() as! RestaurantViewController
-        viewController.viewModel = viewModel
-        return viewController
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = viewModel.title
