@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class RestaurantViewController: UIViewController {
+class RestaurantListViewController: UIViewController {
     
     private let disposeBag: DisposeBag = .init()
     var viewModel: RestaurantListViewModel!

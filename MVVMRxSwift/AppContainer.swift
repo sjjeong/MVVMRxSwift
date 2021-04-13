@@ -17,9 +17,9 @@ class AppContainer {
         return RestaurantListViewModel(restaurantService: self.restaurantService)
     }
     
-    var restaurantViewController: RestaurantViewController {
+    var restaurantListViewController: RestaurantListViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: .main)
-        let viewController = storyboard.instantiateInitialViewController() as! RestaurantViewController
+        let viewController = storyboard.instantiateInitialViewController() as! RestaurantListViewController
         viewController.viewModel = self.restaurantListViewModel
         return viewController
     }
