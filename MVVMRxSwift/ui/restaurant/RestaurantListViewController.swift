@@ -9,10 +9,8 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class RestaurantListViewController: UIViewController {
-    
-    private let disposeBag: DisposeBag = .init()
-    var viewModel: RestaurantListViewModel!
+class RestaurantListViewController: BaseMvvmViewController<RestaurantListViewModel> {
+
     @IBOutlet weak var restaurantTableView: UITableView!
 
     override func viewDidLoad() {

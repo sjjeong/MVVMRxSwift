@@ -24,6 +24,7 @@
 		EEE35FD22625920300FFA0AC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE35FD12625920300FFA0AC /* AppCoordinator.swift */; };
 		EEE35FD7262594DF00FFA0AC /* RestaurantListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE35FD6262594DF00FFA0AC /* RestaurantListViewModel.swift */; };
 		EEE35FDC2625E86A00FFA0AC /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE35FDB2625E86A00FFA0AC /* AppContainer.swift */; };
+		EEE360042625F2D700FFA0AC /* BaseMvvmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE360032625F2D700FFA0AC /* BaseMvvmViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		EEE35FD12625920300FFA0AC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		EEE35FD6262594DF00FFA0AC /* RestaurantListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewModel.swift; sourceTree = "<group>"; };
 		EEE35FDB2625E86A00FFA0AC /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		EEE360032625F2D700FFA0AC /* BaseMvvmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMvvmViewController.swift; sourceTree = "<group>"; };
 		F4D5132AC388EE4BED94525C /* Pods-MVVMRxSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftTests/Pods-MVVMRxSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6CAB0ABD3C63BD086E22A5A /* Pods_MVVMRxSwift_MVVMRxSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMRxSwift_MVVMRxSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -183,6 +185,7 @@
 		EECAB533261DE98000D3AC7E /* MVVMRxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				EEE360022625F2CA00FFA0AC /* base */,
 				EECAB58D2620C52500D3AC7E /* ui */,
 				EECAB534261DE98000D3AC7E /* AppDelegate.swift */,
 				EECAB536261DE98000D3AC7E /* SceneDelegate.swift */,
@@ -232,6 +235,14 @@
 				EEE35FD6262594DF00FFA0AC /* RestaurantListViewModel.swift */,
 			);
 			path = restaurant;
+			sourceTree = "<group>";
+		};
+		EEE360022625F2CA00FFA0AC /* base */ = {
+			isa = PBXGroup;
+			children = (
+				EEE360032625F2D700FFA0AC /* BaseMvvmViewController.swift */,
+			);
+			path = base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,6 +489,7 @@
 				EEE35FDC2625E86A00FFA0AC /* AppContainer.swift in Sources */,
 				EECAB537261DE98000D3AC7E /* SceneDelegate.swift in Sources */,
 				9AA5216D02FDEAEFF2D1533A /* Restaurant.swift in Sources */,
+				EEE360042625F2D700FFA0AC /* BaseMvvmViewController.swift in Sources */,
 				9AA5217BCA3883EFAB6DB894 /* RestaurantService.swift in Sources */,
 				9AA52300AC58177E0D2381AA /* RestaurantListViewController.swift in Sources */,
 				EEE35FD22625920300FFA0AC /* AppCoordinator.swift in Sources */,
