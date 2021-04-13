@@ -25,6 +25,7 @@
 		EEE35FD7262594DF00FFA0AC /* RestaurantListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE35FD6262594DF00FFA0AC /* RestaurantListViewModel.swift */; };
 		EEE35FDC2625E86A00FFA0AC /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE35FDB2625E86A00FFA0AC /* AppContainer.swift */; };
 		EEE360042625F2D700FFA0AC /* BaseMvvmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE360032625F2D700FFA0AC /* BaseMvvmViewController.swift */; };
+		EEE3600F2625F39600FFA0AC /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3600E2625F39600FFA0AC /* BaseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		EEE35FD6262594DF00FFA0AC /* RestaurantListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewModel.swift; sourceTree = "<group>"; };
 		EEE35FDB2625E86A00FFA0AC /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		EEE360032625F2D700FFA0AC /* BaseMvvmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMvvmViewController.swift; sourceTree = "<group>"; };
+		EEE3600E2625F39600FFA0AC /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		F4D5132AC388EE4BED94525C /* Pods-MVVMRxSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftTests/Pods-MVVMRxSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6CAB0ABD3C63BD086E22A5A /* Pods_MVVMRxSwift_MVVMRxSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMRxSwift_MVVMRxSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				EEE360032625F2D700FFA0AC /* BaseMvvmViewController.swift */,
+				EEE3600E2625F39600FFA0AC /* BaseViewModel.swift */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EECAB535261DE98000D3AC7E /* AppDelegate.swift in Sources */,
+				EEE3600F2625F39600FFA0AC /* BaseViewModel.swift in Sources */,
 				EEE35FD7262594DF00FFA0AC /* RestaurantListViewModel.swift in Sources */,
 				EEE35FDC2625E86A00FFA0AC /* AppContainer.swift in Sources */,
 				EECAB537261DE98000D3AC7E /* SceneDelegate.swift in Sources */,

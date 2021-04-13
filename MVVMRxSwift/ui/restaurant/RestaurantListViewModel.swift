@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-final class RestaurantListViewModel {
+final class RestaurantListViewModel: BaseViewModel {
     let title = "Restaurants"
     
     private let restaurantService: RestaurantServiceProtocol
