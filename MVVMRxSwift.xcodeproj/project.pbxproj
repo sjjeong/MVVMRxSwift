@@ -23,6 +23,7 @@
 		EECAB54C261DE98200D3AC7E /* MVVMRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAB54B261DE98200D3AC7E /* MVVMRxSwiftTests.swift */; };
 		EECAB557261DE98200D3AC7E /* MVVMRxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAB556261DE98200D3AC7E /* MVVMRxSwiftUITests.swift */; };
 		EEE35FD22625920300FFA0AC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE35FD12625920300FFA0AC /* AppCoordinator.swift */; };
+		EEE35FD7262594DF00FFA0AC /* RestaurantListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE35FD6262594DF00FFA0AC /* RestaurantListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		EECAB556261DE98200D3AC7E /* MVVMRxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMRxSwiftUITests.swift; sourceTree = "<group>"; };
 		EECAB558261DE98200D3AC7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEE35FD12625920300FFA0AC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		EEE35FD6262594DF00FFA0AC /* RestaurantListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewModel.swift; sourceTree = "<group>"; };
 		F4D5132AC388EE4BED94525C /* Pods-MVVMRxSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftTests/Pods-MVVMRxSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6CAB0ABD3C63BD086E22A5A /* Pods_MVVMRxSwift_MVVMRxSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMRxSwift_MVVMRxSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -227,6 +229,7 @@
 			children = (
 				9AA52F6305D87C5780C43849 /* RestaurantViewController.swift */,
 				9AA52353753A47292ABC4DEC /* RestaurantViewModel.swift */,
+				EEE35FD6262594DF00FFA0AC /* RestaurantListViewModel.swift */,
 			);
 			path = restaurant;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EECAB535261DE98000D3AC7E /* AppDelegate.swift in Sources */,
+				EEE35FD7262594DF00FFA0AC /* RestaurantListViewModel.swift in Sources */,
 				EECAB537261DE98000D3AC7E /* SceneDelegate.swift in Sources */,
 				9AA5216D02FDEAEFF2D1533A /* Restaurant.swift in Sources */,
 				9AA5217BCA3883EFAB6DB894 /* RestaurantService.swift in Sources */,
