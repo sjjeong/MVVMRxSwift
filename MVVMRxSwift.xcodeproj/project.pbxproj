@@ -188,18 +188,18 @@
 			isa = PBXGroup;
 			children = (
 				EEE360022625F2CA00FFA0AC /* base */,
-				EECAB58D2620C52500D3AC7E /* ui */,
-				EECAB534261DE98000D3AC7E /* AppDelegate.swift */,
-				EECAB536261DE98000D3AC7E /* SceneDelegate.swift */,
-				EECAB53D261DE98100D3AC7E /* Assets.xcassets */,
-				EECAB53F261DE98100D3AC7E /* LaunchScreen.storyboard */,
-				EECAB542261DE98100D3AC7E /* Info.plist */,
 				9AA5273959C6C846E49FAE46 /* model */,
-				9AA5220043C2C5C1FA7E060F /* assets */,
 				9AA52EF4DA4D04315EAE2B0E /* data */,
+				9AA5220043C2C5C1FA7E060F /* assets */,
+				EECAB58D2620C52500D3AC7E /* ui */,
 				9AA52FBD070C3E981937B854 /* stroyboard */,
 				EEE35FD12625920300FFA0AC /* AppCoordinator.swift */,
 				EEE35FDB2625E86A00FFA0AC /* AppContainer.swift */,
+				EECAB534261DE98000D3AC7E /* AppDelegate.swift */,
+				EECAB536261DE98000D3AC7E /* SceneDelegate.swift */,
+				EECAB53D261DE98100D3AC7E /* Assets.xcassets */,
+				EECAB542261DE98100D3AC7E /* Info.plist */,
+				EECAB53F261DE98100D3AC7E /* LaunchScreen.storyboard */,
 			);
 			path = MVVMRxSwift;
 			sourceTree = "<group>";
